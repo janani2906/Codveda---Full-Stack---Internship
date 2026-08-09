@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>User Information</title>
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>User Information Dashboard</h1>
+
+        <p>Fetch data from REST API using JavaScript</p>
+
+        <button id="fetchBtn">
+            <i class="fa-solid fa-users"></i>
+            Fetch Users
+        </button>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text"
+                id="searchInput"
+                placeholder="Search users by name...">
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- Dashboard Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <i class="fa-solid fa-users"></i>
+                <h2 id="totalUsers">0</h2>
+                <p>Total Users</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-building"></i>
+                <h2 id="totalCompanies">0</h2>
+                <p>Companies</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-city"></i>
+                <h2 id="totalCities">0</h2>
+                <p>Cities</p>
+            </div>
+
+        </section>
+
+
+        <!-- Loading message -->
+        <div id="loader"></div>
+
+        <!-- User cards -->
+        <div id="users" class="card-container"></div>
+        <p id="noResults" class="no-results">
+    🔍 No users found.
+</p>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 | Developed by Janani</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
